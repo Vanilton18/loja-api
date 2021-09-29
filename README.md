@@ -1,6 +1,6 @@
 ## Lojs API - Para curso de Performance utilizando JMETER
 
-### Autenticando no DockerHub
+### Autenticando no DockerHub (caso esteja em algum outro registry)
 
 docker login 
 
