@@ -9,7 +9,7 @@ docker login
 
 ### Baixar imagem
 
-docker pull vaniltonpinheiro/api-nfe:latest
+docker pull vaniltonpinheiro/api-loja:latest
 
 ### Executar container API
 
