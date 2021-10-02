@@ -13,7 +13,7 @@ docker pull vaniltonpinheiro/api-loja:latest
 
 ### Executar container API
 
-- Acessar a pasta nfe, executar o comando abaixo
+- Executar o comando abaixo
 
 docker-compose up -d
 
