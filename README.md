@@ -7,6 +7,16 @@ docker login
 - username: usuario_dockerhub
 - password: senha_dockerhub
 
+### Build imagem
+
+#### Dependencias
+
+docker build -t vaniltonpinheiro/dep-loja -f Dockerfile .
+
+#### Api Loja
+
+docker build -t vaniltonpinheiro/api-loja -f Dockerfile .
+
 ### Baixar imagem
 
 docker pull vaniltonpinheiro/api-loja:latest
