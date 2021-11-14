@@ -33,7 +33,7 @@ docker-compose ps
 
 ### Criar um superuser para o Django admin (para autenticação na API)
 
-docker exec -it loja-api_web_1 sh -c "python manage.py createsuperuser"
+docker exec -it <container_name>_web_1 sh -c "python manage.py createsuperuser"
 
 ### Acessar a aplicação em:
 
