@@ -11,15 +11,15 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - "5432:5432"
-    #restart: always
+    restart: always
   web:
     image: vaniltonpinheiro/api-loja
     working_dir: /usr/src/app
     command: /bin/sh -c "./wait-for-it.sh db:5432 && python -u manage.py migrate && python -u manage.py collectstatic --noinput && gunicorn loja_virtual.wsgi -b :8000 --log-file -"
     ports:
       - "8000:8000"
-    #restart: always
+    restart: always
     env_file:
-      - .env.prod
+      - .env
     depends_on:
       - db
